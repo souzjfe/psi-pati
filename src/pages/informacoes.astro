@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { PageTransition } from "../components/PageTransition";
+import { AnimatedText } from "../components/AnimatedText";
+import { InformacoesTabs } from "../components/InformacoesTabs";
+---
+
+<MainLayout title="Informações sobre Psicoterapia - Patrícia Christan de Souza">
+  <PageTransition client:load>
+    <div class="container mx-auto px-4 py-12">
+      <AnimatedText client:load>
+        <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          Informações sobre a Psicoterapia
+        </h1>
+        <p class="text-lg text-muted-foreground mb-12 max-w-3xl">
+          Encontre respostas para as principais dúvidas sobre o processo
+          terapêutico, incluindo valores, modalidades de atendimento e seus
+          direitos como cliente.
+        </p>
+      </AnimatedText>
+
+      <AnimatedText client:load delay={0.2}>
+        <InformacoesTabs client:load />
+      </AnimatedText>
+    </div>
+  </PageTransition>
+</MainLayout>

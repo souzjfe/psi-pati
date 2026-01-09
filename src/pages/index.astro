@@ -1,25 +1,102 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import MainLayout from "../layouts/MainLayout.astro";
+import { PageTransition } from "../components/PageTransition";
+import { SectionCard } from "../components/SectionCard";
+import { AnimatedText } from "../components/AnimatedText";
+import { BookOpen, Brain, Briefcase, Info } from "lucide-react";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<MainLayout title="Patrícia Christan de Souza - Psicóloga CRP 08/40942">
+	<PageTransition client:load>
+		{/* Hero Section */}
+		<section class="bg-gradient-to-b from-primary/5 to-background py-20">
+			<div class="container mx-auto px-4">
+				<AnimatedText client:load>
+					<div class="text-center max-w-3xl mx-auto">
+						<h1
+							class="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4"
+						>
+							Patrícia Christan de Souza
+						</h1>
+						<p class="text-xl md:text-2xl text-muted-foreground mb-2">
+							Psicóloga Clínica
+						</p>
+						<p class="text-lg text-muted-foreground">CRP - 08/40942</p>
+					</div>
+				</AnimatedText>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+				<AnimatedText client:load delay={0.2}>
+					<div class="text-center mt-8 max-w-2xl mx-auto">
+						<p class="text-lg text-foreground/80 leading-relaxed">
+							Bem-vindo ao meu espaço. Aqui você encontrará informações sobre
+							meu trabalho, minha abordagem terapêutica e como a psicoterapia
+							pode ser um caminho para o autoconhecimento e bem-estar emocional.
+						</p>
+					</div>
+				</AnimatedText>
+			</div>
+		</section>
+
+		{/* Main Sections */}
+		<section class="py-16">
+			<div class="container mx-auto px-4">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					<SectionCard
+						client:load
+						title="Sobre Mim"
+						description="Conheça minha trajetória e formação profissional"
+						href="/sobre-mim"
+						delay={0}
+					/>
+
+					<SectionCard
+						client:load
+						title="Minha Abordagem"
+						description="Entenda a metodologia e princípios do meu trabalho"
+						href="/minha-abordagem"
+						delay={0.1}
+					/>
+
+					<SectionCard
+						client:load
+						title="Experiências"
+						description="Áreas de atuação e experiência profissional"
+						href="/experiencias"
+						delay={0.2}
+					/>
+
+					<SectionCard
+						client:load
+						title="Informações"
+						description="Tudo sobre psicoterapia, valores e modalidades"
+						href="/informacoes"
+						delay={0.3}
+					/>
+				</div>
+			</div>
+		</section>
+
+		{/* Call to Action */}
+		<section class="py-16 bg-primary/5">
+			<div class="container mx-auto px-4">
+				<AnimatedText client:load>
+					<div class="text-center max-w-2xl mx-auto">
+						<h2 class="text-3xl font-bold text-foreground mb-4">
+							Pronto para Iniciar sua Jornada?
+						</h2>
+						<p class="text-lg text-muted-foreground mb-8">
+							A psicoterapia é um processo de autoconhecimento e transformação.
+							Entre em contato para agendar uma consulta.
+						</p>
+						<a
+							href="#contato"
+							class="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+						>
+							Agendar Consulta
+						</a>
+					</div>
+				</AnimatedText>
+			</div>
+		</section>
+	</PageTransition>
+</MainLayout>

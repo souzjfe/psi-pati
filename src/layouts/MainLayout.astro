@@ -1,0 +1,73 @@
+---
+import { Navigation } from "../components/Navigation";
+
+interface Props {
+  title?: string;
+}
+
+const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col">
+      <Navigation client:load />
+
+      <main class="flex-1">
+        <slot />
+      </main>
+
+      <footer class="bg-muted/50 border-t mt-20">
+        <div class="container mx-auto px-4 py-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="font-semibold text-lg mb-3">
+                Patrícia Christan de Souza
+              </h3>
+              <p class="text-sm text-muted-foreground">CRP - 08/40942</p>
+              <p class="text-sm text-muted-foreground mt-2">
+                Psicóloga Clínica
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg mb-3">Contato</h3>
+              <p class="text-sm text-muted-foreground">
+                Email: contato@exemplo.com
+              </p>
+              <p class="text-sm text-muted-foreground">Tel: (00) 00000-0000</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg mb-3">Horário de Atendimento</h3>
+              <p class="text-sm text-muted-foreground">
+                Segunda a Sexta: 8h - 18h
+              </p>
+              <p class="text-sm text-muted-foreground">Sábado: 8h - 12h</p>
+            </div>
+          </div>
+
+          <div
+            class="mt-8 pt-4 border-t text-center text-sm text-muted-foreground"
+          >
+            <p>
+              &copy; {new Date().getFullYear()} Patrícia Christan de Souza. Todos
+              os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  import "../styles/global.css";
+</script>

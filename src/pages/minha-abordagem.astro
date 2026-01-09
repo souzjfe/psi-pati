@@ -1,0 +1,178 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { PageTransition } from "../components/PageTransition";
+import { AnimatedText } from "../components/AnimatedText";
+---
+
+<MainLayout title="Minha Abordagem - Patrícia Christan de Souza">
+  <PageTransition client:load>
+    <div class="container mx-auto px-4 py-12">
+      <AnimatedText client:load>
+        <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-8">
+          Minha Abordagem
+        </h1>
+      </AnimatedText>
+
+      <div class="max-w-4xl mx-auto space-y-8">
+        <AnimatedText client:load delay={0.1}>
+          <div class="prose prose-lg max-w-none">
+            <p class="text-lg text-foreground/80 leading-relaxed">
+              Minha prática clínica é fundamentada em uma abordagem humanizada e
+              integrativa, que considera cada pessoa em sua singularidade.
+              Combino diferentes técnicas e metodologias terapêuticas para
+              oferecer um atendimento personalizado, adequado às necessidades
+              específicas de cada cliente.
+            </p>
+          </div>
+        </AnimatedText>
+
+        <AnimatedText client:load delay={0.2}>
+          <div class="bg-card border rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
+              Princípios Norteadores
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-3">
+                <div class="flex items-start">
+                  <div
+                    class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"
+                  >
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-1">
+                      Acolhimento
+                    </h3>
+                    <p class="text-sm text-foreground/70">
+                      Criar um ambiente seguro e empático para expressão genuína
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"
+                  >
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-1">Ética</h3>
+                    <p class="text-sm text-foreground/70">
+                      Compromisso com sigilo e respeito aos direitos do cliente
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"
+                  >
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-1">Empatia</h3>
+                    <p class="text-sm text-foreground/70">
+                      Compreensão profunda das experiências e sentimentos
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-3">
+                <div class="flex items-start">
+                  <div
+                    class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"
+                  >
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-1">
+                      Colaboração
+                    </h3>
+                    <p class="text-sm text-foreground/70">
+                      Trabalho conjunto na construção de objetivos terapêuticos
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"
+                  >
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-1">
+                      Atualização
+                    </h3>
+                    <p class="text-sm text-foreground/70">
+                      Formação contínua em técnicas e evidências científicas
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"
+                  >
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-1">
+                      Individualização
+                    </h3>
+                    <p class="text-sm text-foreground/70">
+                      Respeito à singularidade e ritmo de cada pessoa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AnimatedText>
+
+        <AnimatedText client:load delay={0.3}>
+          <div class="bg-card border rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
+              Metodologia Terapêutica
+            </h2>
+            <p class="text-foreground/80 leading-relaxed mb-4">
+              Utilizo uma abordagem integrativa que pode incluir elementos de
+              diferentes correntes psicológicas, sempre adaptando o método às
+              necessidades individuais:
+            </p>
+            <ul class="space-y-2 text-foreground/80">
+              <li class="flex items-start">
+                <span class="text-primary mr-2">✓</span>
+                <span>Técnicas de autoconhecimento e reflexão</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">✓</span>
+                <span>Trabalho com emoções e padrões de comportamento</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">✓</span>
+                <span>Desenvolvimento de habilidades de enfrentamento</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">✓</span>
+                <span>Promoção de mudanças significativas e duradouras</span>
+              </li>
+            </ul>
+          </div>
+        </AnimatedText>
+
+        <AnimatedText client:load delay={0.4}>
+          <div
+            class="bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-6"
+          >
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
+              O Processo Terapêutico
+            </h2>
+            <p class="text-foreground/80 leading-relaxed">
+              O processo terapêutico é construído em parceria. Juntos,
+              identificamos suas necessidades, estabelecemos objetivos e
+              trabalhamos de forma colaborativa para alcançar mudanças positivas
+              em sua vida. Cada sessão é um passo na direção do seu bem-estar
+              emocional e crescimento pessoal.
+            </p>
+          </div>
+        </AnimatedText>
+      </div>
+    </div>
+  </PageTransition>
+</MainLayout>

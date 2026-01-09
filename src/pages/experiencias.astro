@@ -1,0 +1,171 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { PageTransition } from "../components/PageTransition";
+import { AnimatedText } from "../components/AnimatedText";
+---
+
+<MainLayout title="Experiências - Patrícia Christan de Souza">
+  <PageTransition client:load>
+    <div class="container mx-auto px-4 py-12">
+      <AnimatedText client:load>
+        <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-8">
+          Experiências
+        </h1>
+      </AnimatedText>
+
+      <div class="max-w-4xl mx-auto space-y-8">
+        <AnimatedText client:load delay={0.1}>
+          <div class="prose prose-lg max-w-none">
+            <p class="text-lg text-foreground/80 leading-relaxed">
+              Ao longo da minha trajetória profissional, tive a oportunidade de
+              atuar em diversas áreas da psicologia clínica, desenvolvendo
+              expertise no atendimento de diferentes demandas e públicos.
+            </p>
+          </div>
+        </AnimatedText>
+
+        <AnimatedText client:load delay={0.2}>
+          <div class="bg-card border rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-foreground mb-6">
+              Áreas de Atuação
+            </h2>
+
+            <div class="space-y-6">
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-xl font-semibold text-foreground mb-2">
+                  Ansiedade e Estresse
+                </h3>
+                <p class="text-foreground/70">
+                  Tratamento de transtornos de ansiedade, síndrome do pânico,
+                  fobias e estresse relacionado ao trabalho e vida pessoal.
+                </p>
+              </div>
+
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-xl font-semibold text-foreground mb-2">
+                  Depressão e Alterações de Humor
+                </h3>
+                <p class="text-foreground/70">
+                  Suporte e tratamento para quadros depressivos, luto, e
+                  dificuldades no gerenciamento emocional.
+                </p>
+              </div>
+
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-xl font-semibold text-foreground mb-2">
+                  Desenvolvimento Pessoal
+                </h3>
+                <p class="text-foreground/70">
+                  Autoconhecimento, autoestima, definição de objetivos de vida e
+                  desenvolvimento de potencialidades pessoais.
+                </p>
+              </div>
+
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-xl font-semibold text-foreground mb-2">
+                  Relacionamentos
+                </h3>
+                <p class="text-foreground/70">
+                  Dificuldades em relacionamentos afetivos, familiares e
+                  interpessoais, habilidades sociais e comunicação.
+                </p>
+              </div>
+
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-xl font-semibold text-foreground mb-2">
+                  Transições de Vida
+                </h3>
+                <p class="text-foreground/70">
+                  Apoio em momentos de mudança e adaptação: carreira, mudança de
+                  cidade, fases da vida, entre outros.
+                </p>
+              </div>
+            </div>
+          </div>
+        </AnimatedText>
+
+        <AnimatedText client:load delay={0.3}>
+          <div class="bg-card border rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
+              Experiência Profissional
+            </h2>
+            <div class="space-y-4">
+              <div
+                class="relative pl-8 pb-6 border-l-2 border-primary/30 last:border-l-0 last:pb-0"
+              >
+                <div
+                  class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-primary"
+                >
+                </div>
+                <h3 class="font-semibold text-foreground mb-1">
+                  Atendimento Clínico Privado
+                </h3>
+                <p class="text-sm text-muted-foreground mb-2">Atual</p>
+                <p class="text-foreground/70 text-sm">
+                  Atendimento psicoterapêutico individual para adultos,
+                  adolescentes e jovens adultos.
+                </p>
+              </div>
+
+              <div
+                class="relative pl-8 pb-6 border-l-2 border-primary/30 last:border-l-0 last:pb-0"
+              >
+                <div
+                  class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-primary"
+                >
+                </div>
+                <h3 class="font-semibold text-foreground mb-1">
+                  Experiência em Instituições de Saúde
+                </h3>
+                <p class="text-sm text-muted-foreground mb-2">
+                  Anos anteriores
+                </p>
+                <p class="text-foreground/70 text-sm">
+                  Atuação em contextos institucionais com foco em saúde mental e
+                  bem-estar.
+                </p>
+              </div>
+
+              <div
+                class="relative pl-8 pb-6 border-l-2 border-primary/30 last:border-l-0 last:pb-0"
+              >
+                <div
+                  class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-primary"
+                >
+                </div>
+                <h3 class="font-semibold text-foreground mb-1">
+                  Formação Continuada
+                </h3>
+                <p class="text-sm text-muted-foreground mb-2">Constante</p>
+                <p class="text-foreground/70 text-sm">
+                  Participação regular em cursos, workshops e supervisões
+                  clínicas para aprimoramento profissional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </AnimatedText>
+
+        <AnimatedText client:load delay={0.4}>
+          <div
+            class="bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-6"
+          >
+            <h2 class="text-2xl font-semibold text-foreground mb-4">
+              Público Atendido
+            </h2>
+            <p class="text-foreground/80 leading-relaxed mb-4">
+              Atendo adolescentes a partir de 15 anos, jovens adultos e adultos,
+              oferecendo um espaço terapêutico adaptado às necessidades de cada
+              faixa etária e momento de vida.
+            </p>
+            <p class="text-foreground/80 leading-relaxed">
+              Cada pessoa é única, e meu compromisso é proporcionar um
+              atendimento individualizado e respeitoso, independentemente da
+              questão que a trouxe à terapia.
+            </p>
+          </div>
+        </AnimatedText>
+      </div>
+    </div>
+  </PageTransition>
+</MainLayout>
