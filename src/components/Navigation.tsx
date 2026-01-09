@@ -16,18 +16,7 @@ const navItems: NavItem[] = [
   { label: 'Sobre Mim', href: '/sobre-mim' },
   { label: 'Minha Abordagem', href: '/minha-abordagem' },
   { label: 'Experiências', href: '/experiencias' },
-  {
-    label: 'Informações',
-    href: '/informacoes',
-    children: [
-      { label: 'O que é', href: '/informacoes#o-que-e' },
-      { label: 'Duração da Sessão', href: '/informacoes#duracao-sessao' },
-      { label: 'Duração do Processo', href: '/informacoes#duracao-processo' },
-      { label: 'Valor', href: '/informacoes#valor' },
-      { label: 'Modalidades', href: '/informacoes#modalidades' },
-      { label: 'Direitos do Cliente', href: '/informacoes#direitos-cliente' },
-    ]
-  },
+  { label: 'Psicoterapia', href: '/informacoes' },
 ];
 
 export function Navigation() {
