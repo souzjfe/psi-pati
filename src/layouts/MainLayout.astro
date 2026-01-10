@@ -21,6 +21,102 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
       rel="stylesheet"
     />
     <title>{title}</title>
+    <meta
+      name="description"
+      content="Psicóloga Patrícia Christan de Souza (CRP 08/40942) em Francisco Beltrão - PR. Atendimento psicológico presencial e online. Especialista em ansiedade, depressão, autoconhecimento e desenvolvimento pessoal."
+    />
+    <meta
+      name="keywords"
+      content="psicóloga Francisco Beltrão, psicóloga Paraná, psicoterapia Francisco Beltrão, psicóloga online, atendimento psicológico, CRP 08/40942, ansiedade, depressão, terapia online"
+    />
+    <meta name="author" content="Patrícia Christan de Souza" />
+    <meta name="theme-color" content="#ffffff" />
+
+    {/* Open Graph / Facebook / WhatsApp */}
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.patriciachristanpsicologa.com.br"
+    />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Psicóloga em Francisco Beltrão - PR. Atendimento presencial e online especializado em ansiedade, depressão e desenvolvimento pessoal."
+    />
+    <meta
+      property="og:image"
+      content="https://www.patriciachristanpsicologa.com.br/pati.jpeg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1600" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Patrícia Christan de Souza" />
+
+    {/* Twitter */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://www.patriciachristanpsicologa.com.br"
+    />
+    <meta property="twitter:title" content={title} />
+    <meta
+      property="twitter:description"
+      content="Psicóloga em Francisco Beltrão - PR. Atendimento presencial e online especializado em ansiedade, depressão e desenvolvimento pessoal."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.patriciachristanpsicologa.com.br/pati.jpeg"
+    />
+
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    {/* Structured Data - Local Business */}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Psychologist",
+        "name": "Patrícia Christan de Souza",
+        "description": "Psicóloga Clínica especializada em atendimento de ansiedade, depressão, autoconhecimento e desenvolvimento pessoal",
+        "image": "/pati.jpeg",
+        "telephone": "+55-46-99982-7595",
+        "email": "psi.patriciachristan@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Francisco Beltrão",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Francisco Beltrão",
+            "containedIn": {
+              "@type": "State",
+              "name": "Paraná"
+            }
+          },
+          {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        ],
+        "availableChannel": [
+          {
+            "@type": "ServiceChannel",
+            "serviceType": "Atendimento Presencial",
+            "availableLanguage": "pt-BR"
+          },
+          {
+            "@type": "ServiceChannel",
+            "serviceType": "Atendimento Online",
+            "availableLanguage": "pt-BR"
+          }
+        ],
+        "priceRange": "$$",
+        "url": "https://www.patriciachristanpsicologa.com.br",
+        "sameAs": ["https://www.instagram.com/psi.patriciachristan"]
+      }
+    </script>
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
@@ -46,17 +142,39 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
             <div>
               <h3 class="font-semibold text-lg mb-3">Contato</h3>
               <p class="text-sm text-muted-foreground">
-                Email: contato@exemplo.com
+                Email: <a
+                  href="mailto:psi.patriciachristan@gmail.com"
+                  class="hover:text-primary transition-colors"
+                  >psi.patriciachristan@gmail.com</a
+                >
               </p>
-              <p class="text-sm text-muted-foreground">Tel: (00) 00000-0000</p>
+              <p class="text-sm text-muted-foreground">
+                Tel: <a
+                  href="https://wa.me/5546999827595?text=Olá! Gostaria de agendar uma consulta."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-primary transition-colors"
+                  >(46) 99982-7595</a
+                >
+              </p>
+              <p class="text-sm text-muted-foreground mt-2">
+                Instagram: <a
+                  href="https://www.instagram.com/psi.patriciachristan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-primary transition-colors"
+                  >@psi.patriciachristan</a
+                >
+              </p>
             </div>
 
             <div>
-              <h3 class="font-semibold text-lg mb-3">Horário de Atendimento</h3>
+              <h3 class="font-semibold text-lg mb-3">Localização</h3>
               <p class="text-sm text-muted-foreground">
-                Segunda a Sexta: 8h - 18h
+                Francisco Beltrão - PR
               </p>
-              <p class="text-sm text-muted-foreground">Sábado: 8h - 12h</p>
+              <p class="text-sm text-muted-foreground">Atendimento online</p>
+              <p class="text-sm text-muted-foreground">para todo o Brasil</p>
             </div>
           </div>
 

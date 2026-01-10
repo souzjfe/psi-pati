@@ -11,29 +11,58 @@ import { BookOpen, Brain, Briefcase, Info } from "lucide-react";
 		{/* Hero Section */}
 		<section class="bg-gradient-to-b from-primary/5 to-background py-20">
 			<div class="container mx-auto px-4">
-				<AnimatedText client:load>
-					<div class="text-center max-w-3xl mx-auto">
-						<h1
-							class="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4"
-						>
-							Patrícia Christan de Souza
-						</h1>
-						<p class="text-xl md:text-2xl text-muted-foreground mb-2">
-							Psicóloga Clínica
-						</p>
-						<p class="text-lg text-muted-foreground">CRP - 08/40942</p>
-					</div>
-				</AnimatedText>
+				<div class="max-w-6xl mx-auto">
+					<div class="grid md:grid-cols-2 gap-12 items-center">
+						{/* Photo */}
+						<AnimatedText client:load>
+							<div class="flex justify-center md:justify-end">
+								<div class="relative">
+									<div
+										class="absolute inset-0 bg-primary/10 rounded-2xl transform rotate-3"
+									>
+									</div>
+									<img
+										src="/pati.jpeg"
+										alt="Patrícia Christan de Souza - Psicóloga"
+										class="relative rounded-2xl shadow-xl w-full max-w-md object-cover aspect-[3/4]"
+									/>
+								</div>
+							</div>
+						</AnimatedText>
 
-				<AnimatedText client:load delay={0.2}>
-					<div class="text-center mt-8 max-w-2xl mx-auto">
-						<p class="text-lg text-foreground/80 leading-relaxed">
-							Bem-vindo ao meu espaço. Aqui você encontrará informações sobre
-							meu trabalho, minha abordagem terapêutica e como a psicoterapia
-							pode ser um caminho para o autoconhecimento e bem-estar emocional.
-						</p>
+						{/* Text Content */}
+						<div class="text-center md:text-left">
+							<AnimatedText client:load delay={0.1}>
+								<h1
+									class="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4"
+								>
+									Patrícia Christan de Souza
+								</h1>
+								<p class="text-xl md:text-2xl text-muted-foreground mb-2">
+									Psicóloga Clínica
+								</p>
+								<p class="text-lg text-muted-foreground mb-6">CRP - 08/40942</p>
+							</AnimatedText>
+
+							<AnimatedText client:load delay={0.2}>
+								<p class="text-lg text-foreground/80 leading-relaxed mb-8">
+									Bem-vindo ao meu espaço. Aqui você encontrará informações
+									sobre meu trabalho, minha abordagem terapêutica e como a
+									psicoterapia pode ser um caminho para o autoconhecimento e
+									bem-estar emocional.
+								</p>
+								<a
+									href="https://wa.me/5546999827595?text=Olá! Gostaria de agendar uma consulta."
+									target="_blank"
+									rel="noopener noreferrer"
+									class="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-all hover:scale-105 shadow-md hover:shadow-lg"
+								>
+									Agendar Consulta
+								</a>
+							</AnimatedText>
+						</div>
 					</div>
-				</AnimatedText>
+				</div>
 			</div>
 		</section>
 
@@ -81,19 +110,94 @@ import { BookOpen, Brain, Briefcase, Info } from "lucide-react";
 			<div class="container mx-auto px-4">
 				<AnimatedText client:load>
 					<div class="text-center max-w-2xl mx-auto">
-						<h2 class="text-3xl font-bold text-foreground mb-4">
+						<h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
 							Pronto para Iniciar sua Jornada?
 						</h2>
-						<p class="text-lg text-muted-foreground mb-8">
-							A psicoterapia é um processo de autoconhecimento e transformação.
-							Entre em contato para agendar uma consulta.
+						<p class="text-lg text-foreground/80 mb-10">
+							Atendimento presencial em Francisco Beltrão - PR e online para
+							todo o Brasil. Entre em contato para agendar sua consulta.
 						</p>
-						<a
-							href="#contato"
-							class="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+
+						{/* Contact Buttons */}
+						<div
+							class="flex flex-col sm:flex-row gap-4 justify-center items-center"
 						>
-							Agendar Consulta
-						</a>
+							{/* WhatsApp Button */}
+							<a
+								href="https://wa.me/5546999827595?text=Olá! Gostaria de agendar uma consulta."
+								target="_blank"
+								rel="noopener noreferrer"
+								class="group inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 w-full sm:w-auto justify-center"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="group-hover:rotate-12 transition-transform"
+								>
+									<path
+										d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+									></path>
+								</svg>
+								<span>WhatsApp</span>
+							</a>
+
+							{/* Email Button */}
+							<a
+								href="mailto:psi.patriciachristan@gmail.com"
+								class="group inline-flex items-center gap-3 bg-card hover:bg-accent text-foreground border-2 border-primary px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto justify-center"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="group-hover:scale-110 transition-transform"
+								>
+									<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+									<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+								</svg>
+								<span>E-mail</span>
+							</a>
+
+							{/* Instagram Button */}
+							<a
+								href="https://www.instagram.com/psi.patriciachristan"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="group inline-flex items-center gap-3 bg-card hover:bg-accent text-foreground border-2 border-primary px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto justify-center"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="group-hover:scale-110 transition-transform"
+								>
+									<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+									<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+									></path>
+									<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+								</svg>
+								<span>Instagram</span>
+							</a>
+						</div>
 					</div>
 				</AnimatedText>
 			</div>
