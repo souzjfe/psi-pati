@@ -1,5 +1,6 @@
 ---
 import { Navigation } from "../components/Navigation";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -21,6 +22,7 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
       rel="stylesheet"
     />
     <title>{title}</title>
+    <ClientRouter />
     <meta
       name="description"
       content="Psicóloga Patrícia Christan de Souza (CRP 08/40942) em Francisco Beltrão - PR. Atendimento psicológico presencial e online. Especialista em ansiedade, depressão, autoconhecimento e desenvolvimento pessoal."

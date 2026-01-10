@@ -15,27 +15,27 @@ export function InformacoesTabs() {
       <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 h-auto gap-2 bg-transparent">
         <TabsTrigger value="o-que-e" className="flex items-center gap-2">
           <BookOpen className="w-4 h-4" />
-          <span className="hidden sm:inline">O que é</span>
+          <span>O que é</span>
         </TabsTrigger>
         <TabsTrigger value="duracao-sessao" className="flex items-center gap-2">
           <Clock className="w-4 h-4" />
-          <span className="hidden sm:inline">Duração Sessão</span>
+          <span>Duração Sessão</span>
         </TabsTrigger>
         <TabsTrigger value="duracao-processo" className="flex items-center gap-2">
           <Calendar className="w-4 h-4" />
-          <span className="hidden sm:inline">Duração Processo</span>
+          <span>Duração Processo</span>
         </TabsTrigger>
         <TabsTrigger value="valor" className="flex items-center gap-2">
           <DollarSign className="w-4 h-4" />
-          <span className="hidden sm:inline">Valor</span>
+          <span>Valor</span>
         </TabsTrigger>
         <TabsTrigger value="modalidades" className="flex items-center gap-2">
           <Monitor className="w-4 h-4" />
-          <span className="hidden sm:inline">Modalidades</span>
+          <span>Modalidades</span>
         </TabsTrigger>
         <TabsTrigger value="direitos" className="flex items-center gap-2">
           <Shield className="w-4 h-4" />
-          <span className="hidden sm:inline">Direitos</span>
+          <span>Direitos</span>
         </TabsTrigger>
       </TabsList>
 
