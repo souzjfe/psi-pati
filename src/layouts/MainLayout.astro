@@ -12,6 +12,23 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    {/* Google Analytics */}
+    <script
+      type="text/partytown"
+      async
+      src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}
+    ></script>
+    <script
+      type="text/partytown"
+      define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}
+    >
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", gaId);
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -137,6 +154,7 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
               <p class="text-sm text-muted-foreground">
                 Email: <a
                   href="mailto:psi.patriciachristan@gmail.com"
+                  data-track="appointment"
                   class="hover:text-primary transition-colors"
                   >psi.patriciachristan@gmail.com</a
                 >
@@ -146,6 +164,7 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
                   href="https://wa.me/5546999827595?text=Olá! Gostaria de agendar uma consulta."
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-track="appointment"
                   class="hover:text-primary transition-colors"
                   >(46) 99982-7595</a
                 >
@@ -187,4 +206,26 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
 
 <script>
   import "../styles/global.css";
+
+  // Google Analytics Event Tracking
+  const setupAnalytics = () => {
+    const trackButtons = document.querySelectorAll(
+      '[data-track="appointment"]',
+    ) as NodeListOf<HTMLElement>;
+
+    trackButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "click_schedule", {
+            event_category: "interaction",
+            event_label: "Agendar Consulta",
+          });
+        }
+      });
+    });
+  };
+
+  // Run on initial load and after view transitions
+  setupAnalytics();
+  document.addEventListener("astro:page-load", setupAnalytics);
 </script>
