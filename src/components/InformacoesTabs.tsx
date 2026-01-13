@@ -209,9 +209,7 @@ export function InformacoesTabs() {
 
           <div className="space-y-4 text-foreground/80">
             <p className="leading-relaxed">
-              O investimento em psicoterapia é um cuidado com a sua saúde mental e qualidade de vida.
-              Os valores são definidos de acordo com a tabela de referência do Conselho Regional de
-              Psicologia e podem variar conforme a modalidade de atendimento.
+              O cuidado com a saúde mental é um compromisso ético e técnico. Em conformidade com o Código de Ética Profissional do Psicólogo, o valor das sessões não é divulgado abertamente, pois a psicologia não deve ser tratada como mercadoria, sendo vedada a utilização do preço como forma de propaganda ou captação de clientes.
             </p>
 
             <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 mt-6">
@@ -244,7 +242,7 @@ export function InformacoesTabs() {
               <div className="border rounded-lg p-4">
                 <h4 className="font-semibold text-foreground mb-2">Política de Cancelamento</h4>
                 <p className="text-sm">
-                  Cancelamentos devem ser comunicados com antecedência mínima para não haver cobrança.
+                  Cancelamentos devem ser comunicados com antecedência mínima de 24 horas para não haver cobrança. Salvo em motivo de força maior.
                 </p>
               </div>
             </div>
