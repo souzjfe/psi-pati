@@ -5,7 +5,6 @@ import { ClientRouter } from "astro:transitions";
 interface Props {
   title?: string;
 }
-
 const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
 ---
 
@@ -57,7 +56,7 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
     <meta property="og:title" content={title} />
     <meta
       property="og:description"
-      content="Psicóloga em Francisco Beltrão - PR. Atendimento presencial e online especializado em ansiedade, depressão e desenvolvimento pessoal."
+      content="Psicóloga em Francisco Beltrão - PR. Atendimento presencial e online."
     />
     <meta property="og:image" content={new URL("/pati.jpeg", Astro.site)} />
     <meta property="og:image:width" content="1200" />
@@ -76,7 +75,7 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
     <meta property="twitter:title" content={title} />
     <meta
       property="twitter:description"
-      content="Psicóloga em Francisco Beltrão - PR. Atendimento presencial e online especializado em ansiedade, depressão e desenvolvimento pessoal."
+      content="Psicóloga em Francisco Beltrão - PR. Atendimento presencial e online."
     />
     <meta
       property="twitter:image"
@@ -91,7 +90,7 @@ const { title = "Patrícia Christan de Souza - Psicóloga" } = Astro.props;
         "@context": "https://schema.org",
         "@type": "Psychologist",
         "name": "Patrícia Christan de Souza",
-        "description": "Psicóloga Clínica especializada em atendimento de ansiedade, depressão, autoconhecimento e desenvolvimento pessoal",
+        "description": "Psicóloga Clínica",
         "image": "/pati.jpeg",
         "telephone": "+55-46-99982-7595",
         "email": "psi.patriciachristan@gmail.com",
