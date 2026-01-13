@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://patricia.christan.com.br/sitemap-index.xml
