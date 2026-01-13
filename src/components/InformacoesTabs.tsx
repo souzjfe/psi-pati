@@ -53,16 +53,11 @@ export function InformacoesTabs() {
 
           <div className="space-y-4 text-foreground/80">
             <p className="leading-relaxed">
-              A psicoterapia é um processo colaborativo entre terapeuta e cliente, baseado em
-              evidências científicas e técnicas validadas, que visa promover o autoconhecimento,
-              o bem-estar emocional e mudanças significativas na vida da pessoa.
+              A psicoterapia é um processo colaborativo e transparente entre terapeuta e cliente, fundamentado em evidências científicas e técnicas voltadas à compreensão do comportamento humano. É um espaço seguro e confidencial para observar pensamentos, sentimentos e relacionamentos, buscando desenvolver ferramentas que auxiliem a lidar com as complexidades da vida.
             </p>
 
             <p className="leading-relaxed">
-              Durante as sessões, você terá um espaço seguro e confidencial para explorar seus
-              pensamentos, sentimentos, comportamentos e relacionamentos. O objetivo é desenvolver
-              novas perspectivas, habilidades e recursos para lidar com desafios e alcançar uma
-              vida mais plena e satisfatória.
+              O objetivo é construir novas perspectivas e recursos para enfrentar desafios, buscando uma vida mais valorosa e consciente. Nosso trabalho visa:
             </p>
 
             <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-6">
@@ -70,23 +65,23 @@ export function InformacoesTabs() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  <span>Maior autoconhecimento e compreensão de si mesmo</span>
+                  <span>Ampliar o autoconhecimento: Entender como sua história e o ambiente influenciam quem você é hoje</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  <span>Desenvolvimento de habilidades emocionais e sociais</span>
+                  <span>Desenvolver habilidades: Fortalecer repertórios emocionais e sociais para lidar melhor com as situações do dia a dia</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  <span>Redução de sintomas de ansiedade, depressão e estresse</span>
+                  <span>Manejar sintomas: Aprender formas mais saudáveis de lidar com a ansiedade, o estresse e as variações de humor</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  <span>Melhoria nos relacionamentos interpessoais</span>
+                  <span>Fortalecer vínculos: Buscar formas mais assertivas e conscientes de se relacionar com as pessoas ao seu redor</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">✓</span>
-                  <span>Maior capacidade de lidar com desafios e mudanças</span>
+                  <span>Flexibilidade nas mudanças: Desenvolver maior capacidade de enfrentamento diante de transições e desafios de vida</span>
                 </li>
               </ul>
             </div>
@@ -116,8 +111,7 @@ export function InformacoesTabs() {
               <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
                 <h3 className="font-semibold text-foreground mb-2">Estrutura da Sessão</h3>
                 <p className="text-sm">
-                  Os 50 minutos são dedicados exclusivamente a você, permitindo um espaço
-                  adequado para exploração e trabalho terapêutico profundo.
+                  Os 50 minutos são dedicados exclusivamente a você, permitindo um espaço adequado para o processo terapêutico.
                 </p>
               </div>
 
@@ -159,9 +153,7 @@ export function InformacoesTabs() {
             <div className="bg-muted/50 border rounded-lg p-4">
               <h3 className="font-semibold text-foreground mb-2">Não existe um prazo fixo</h3>
               <p>
-                Algumas pessoas buscam a terapia para questões pontuais e podem alcançar seus
-                objetivos em alguns meses, enquanto outras preferem um acompanhamento mais longo
-                para desenvolvimento pessoal contínuo.
+                Algumas pessoas possuem demandas pontuais e podem alcançar seus objetivos em alguns meses, enquanto outras demandam de um acompanhamento mais longo. O importante é compreender que o objetivo final na psicoterapia é alta terapêutica, isso é, não significa eliminar todos os problemas que nos trouxeram ao inicio do processo, mas sim desenvolver repertório comportamental capaz de gerenciar com autonomia as demandas da vida.
               </p>
             </div>
 
